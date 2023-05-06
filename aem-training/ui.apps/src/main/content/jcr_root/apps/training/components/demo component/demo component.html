@@ -1,0 +1,9 @@
+<sly data-sly-use.clientlibs="/libs/granite/sightly/templates/clientlib.html" data-sly-test="${!wcmode.edit}" data-sly-call="${clientlibs.css @ categories='demo.style'}" />
+
+<h1>Demo Component </h1></br>
+<h1><marquee>News Headlines </marquee> </h1>
+
+<sly data-sly-use.data="com.adobe.aem.training.core.models.NewsArticleModel"/> </br>
+
+<p>${data.headlineText}</p> </br>
+${data.description} 

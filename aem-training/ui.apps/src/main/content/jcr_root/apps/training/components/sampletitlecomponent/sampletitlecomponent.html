@@ -1,0 +1,26 @@
+SampleTitleComponent  </br>
+
+<sly data-sly-use.sampleTitleHandler="{'com.adobe.aem.training.core.handlers.SampleTitleComponentHandler'}">
+
+<sly data-sly-list= "${sampleTitleHandler.headerLinks}">
+     ${item.label}
+	 ${item.path}
+	 <br/>
+</sly>
+
+ 
+ </sly>
+ 
+ 
+ 
+<sly data-sly-use.MultifieldModel="{'com.adobe.aem.training.core.models.MultifieldComponentModel'}"> </br>
+   
+   <sly data-sly-list= "${MultifieldModel.headerLinks}">
+
+          ${item.label} </br>
+          ${item.path}
+</sly>
+</sly>
+
+
+

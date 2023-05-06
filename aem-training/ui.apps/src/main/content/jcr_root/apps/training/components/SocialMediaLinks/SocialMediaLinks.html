@@ -1,0 +1,12 @@
+SocialMediaLinks Component </br>
+
+<div data-sly-use.multiDataFetcher="${'com.adobe.aem.training.core.models.MultiDataFetcher'}">
+                <sly data-sly-list.item="${multiDataFetcher.multiDataMap}">
+                                ${item.socialMedia}
+        ${item.socialMediaLink}
+                </sly>
+</div>
+
+
+
+
